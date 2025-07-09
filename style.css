@@ -11,72 +11,65 @@ body {
   background-color: #C49F8C;
   color: #C49F8C;
 }
-
 .hero-section {
-  background-color: #C49F8C; /* background beige */
-  padding: 20px;
-  text-align: center;
+  background-color: #494544;
+  color: #f5f5f5;
+  padding: 4rem 2rem;
 }
 
 .hero-content {
-  background-color: #494544; /* dark box */
-  color: #f5f5f5;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  flex-wrap: wrap;
 }
 
-.logo {
-  width: 50px;
-  height: auto;
-  margin-bottom: 10px;
+.hero-content .text {
+  flex: 1 1 500px;
 }
 
-.brand {
-  font-size: 28px;
-  font-weight: bold;
-  color: #C49F8C;
+.logo-text {
+  display: flex;
+  align-items: center;
+  font-size: 2.75rem;
+  color: #C19B89;
 }
 
-h2 {
-  font-size: 20px;
-  margin: 10px 0;
+.logo-icon {
+  width: 40px;
+  margin-right: 10px;
 }
 
-p {
-  font-size: 14px;
-  margin-bottom: 20px;
+.hero-content .text h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #f5f5f5;
+}
+
+.hero-content .text p {
+  font-size: 1rem;
+  color: #d4d4d4;
+  margin: 1rem 0 2rem;
+  max-width: 500px;
 }
 
 .cta-button {
-  background-color: #C49F8C;
+  padding: 0.75rem 1.5rem;
+  background-color: #C19B89;
   color: #fff;
-  padding: 10px 20px;
   border: 2px solid #fff;
-  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  display: inline-block;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .hero-content {
-    padding: 16px;
-  }
-
-  .brand {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 13px;
-  }
+.cta-button:hover {
+  background-color: #fff;
+  color: #1e1e1e;
 }
 
 .image {
@@ -85,9 +78,10 @@ p {
 }
 
 .image img {
-  max-width: 300%;
+  width: 100%;
+  max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
