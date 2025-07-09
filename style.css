@@ -13,55 +13,70 @@ body {
 }
 
 .hero-section {
-  background-color: #494544;
-  color: #f5f5f5;
-  padding: 4rem 2rem;
+  background-color: #C49F8C; /* background beige */
+  padding: 20px;
+  text-align: center;
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding:40px;
-  gap:40px;
+  background-color: #494544; /* dark box */
+  color: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.text {
-  flex: 1 1 500px;
+.logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.text h1 span {
-  font-size: 2.75rem;
-  color: #C19B89; /* Accent color for "imaconnect" */
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: #C49F8C;
 }
 
-.text h2 {
-  font-size: 2rem;
-  margin-top: 1rem;
-  color:#f5f5f5;
+h2 {
+  font-size: 20px;
+  margin: 10px 0;
 }
 
-.text p {
-  font-size: 1rem;
-  color: #d4d4d4;
-  margin: 1rem 0 2rem;
-  max-width: 500px;
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .cta-button {
-  padding: 0.75rem 1.5rem;
-  background-color: #C19B89;
+  background-color: #C49F8C;
   color: #fff;
+  padding: 10px 20px;
   border: 2px solid #fff;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.cta-button:hover {
-  background-color: #fff;
-  color: #1e1e1e;
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 16px;
+  }
+
+  .brand {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 13px;
+  }
 }
 
 .image {
