@@ -1,16 +1,19 @@
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman',serif;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 
 body {
-  margin: 0;
-  font-family: Georgia, serif;
   background-color: #C49F8C;
-  color: #C49F8C;
+  color: #ffffff;
+  font-family: Georgia, serif;
+  line-height: 1.6;
 }
+
+/* Hero Section */
 .hero-section {
   background-color: #494544;
   color: #f5f5f5;
@@ -19,28 +22,29 @@ body {
 
 .hero-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .hero-content .text {
-  flex: 1 1 500px;
+  flex: 1 1 400px;
 }
 
 .logo-text {
   display: flex;
   align-items: center;
+  gap: 10px;
   font-size: 2.75rem;
-  color: #C19B89;
+  color: #d4916a;
+  margin-bottom: 10px;
 }
 
 .logo-icon {
   width: 40px;
-  margin-right: 10px;
 }
 
 .hero-content .text h2 {
@@ -74,7 +78,7 @@ body {
 
 .image {
   flex: 1 1 400px;
-  text-align: right;
+  text-align: center;
 }
 
 .image img {
@@ -84,12 +88,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-body {
-  margin: 0;
-  font-family: Georgia, serif;
-  background-color: #f1e2db;
-}
-
+/* Commitments Section */
 .commitments-section {
   background-color: #2e2e2e;
   color: #C49F8C;
@@ -108,7 +107,7 @@ body {
 
 .commitment-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
@@ -116,7 +115,7 @@ body {
   background-color: #3a3a3a;
   padding: 1.5rem;
   border-radius: 8px;
-  color:#e6e3e3;
+  color: #e6e3e3;
 }
 
 .commitment-card h3 {
@@ -129,11 +128,7 @@ body {
   line-height: 1.6;
 }
 
-/* Full width for the bottom card */
-.commitment-card.full-width {
-  grid-column: span 2;
-}
-
+/* How It Works */
 .how-it-works {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -148,35 +143,27 @@ body {
 
 .steps-row {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
 }
 
 .step-card {
   flex: 1 1 300px;
-  background-color:#2a2f33;
-  border: 1px solid #ddd;
+  background-color: #2a2f33;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.step-card.dark {
+.step-card.dark,
+.step-card.light {
   background-color: #494544;
   color: #fff;
 }
-.step-card.light{
-  background-color: #494544;
-  color:#fff;
-}
-
-
 
 .chevron-top {
-  position: relative;
   height: 60px;
-  background-color: inherit;
   clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
   display: flex;
   align-items: center;
@@ -203,7 +190,7 @@ body {
   line-height: 1.5;
 }
 
-
+/* Vetting Process */
 .vetting-process {
   background-color: #494544;
   color: #ccc;
@@ -217,13 +204,7 @@ body {
 .vetting-process h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color:#C19B89;
-}
-
-.vetting-process p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  color: #C19B89;
 }
 
 .vetting-process ul {
@@ -243,7 +224,7 @@ body {
   margin-bottom: 0.3rem;
 }
 
-
+/* Benefits Section */
 .benefits-section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -257,20 +238,17 @@ body {
   color: #464342;
 }
 
-
 .benefits-grid {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
 .benefit-item {
-  flex: 1 1 280px;
   background-color: #494544;
   padding: 1.5rem;
-  text-align: left;
   border-radius: 8px;
+  text-align: left;
 }
 
 .benefit-item i {
@@ -290,47 +268,14 @@ body {
   line-height: 1.6;
   color: #e6e3e3;
 }
-body {
-  margin: 0;
-  padding: 40px;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #C49F8C;
-  color: #ffffff;
-}
 
-h1 {
-  color: #464342;
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-.logo-text {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* spacing between image and text */
-  font-size: 2rem;
-  color: #d4916a;
-  margin-bottom: 10px;
-}
-
-.logo-icon {
-  height: 40px; /* adjust size as needed */
-}
-
-
-.subtitle {
-  font-size: 1rem;
-  color: #ccc;
-}
-
+/* Influencer Types */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
   margin-top: 20px;
-}
-
-.grid-item {
-  position: relative;
+  text-align: center;
 }
 
 .grid-item img {
@@ -344,7 +289,11 @@ h1 {
   margin-top: 8px;
   font-weight: bold;
   color: #fff8dc;
-  text-align: center;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #ccc;
 }
 
 .footer-text {
@@ -353,6 +302,7 @@ h1 {
   color: #ccc;
 }
 
+/* Footer */
 .footer {
   background-color: #464342;
   padding: 20px 0;
@@ -379,3 +329,36 @@ h1 {
 .footer-links a:hover {
   color: #ffffff;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .benefits-grid,
+  .commitment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 1rem;
+  }
+
+  h1, h
